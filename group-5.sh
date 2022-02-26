@@ -23,7 +23,7 @@ add_users(){                                  # function to add users
 
 		echo $username:$i | sudo chpasswd     # username:password piped to chpasswd
 
-        [ $? -eq 0 ] && echo "passwd for $username changed" || "failed to change passwd for $username"
+        	[ $? -eq 0 ] && echo "passwd for $username changed" || "failed to change passwd for $username"
 
 		done
 		echo " "
@@ -47,7 +47,7 @@ del_users(){                                  # delete users
 backup(){                                    # take backup of users
 
 		for i in $(cat $2)                   
-do
+		do
 		username="${1}-${i}"                
 		
 		dest=/home/trezen/BOSS
@@ -62,7 +62,7 @@ do
 		[ $? -eq 0 ] && echo "backup done" || echo "backup failed"
 
 		echo " "
-done
+		done
 
 }
 
