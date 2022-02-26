@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Group 5 Project
+
 # script to add users from different streams : 3 streams science, commerce and arts
 # science students with roll.no in sci.txt
 # commerce students with roll.no in com.txt
